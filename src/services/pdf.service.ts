@@ -24,8 +24,11 @@ export const pdfService = async (req: Request, res: Response) => {
 		const filePath = __dirname + '/uploads/' + pdfFile.name;
 
 		pdfFile.mv(filePath, async (err) => {
+
 			if (err) return res.status(500).send(err);
+			
 			const xmlString = await pdfToXml(filePath);
+
 			res.set('Content-Type', 'application/xml');
 			res.set('Content-Disposition', 'attachment; filename="downloaded.xml"');
 
