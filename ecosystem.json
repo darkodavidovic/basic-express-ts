@@ -1,7 +1,7 @@
 {
 	"apps": [
 		{
-			"name": "bb-backend",
+			"name": "pdf-xml",
 			"cwd": "",
 			"script": "npm",
 			"args": "start",
