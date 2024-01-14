@@ -1,10 +1,10 @@
-
 import express, { Application } from 'express'
 import cookieParser from "cookie-parser"
 import cors from 'cors'
 import privateRouter from './routes/private'
 import publicRouter from './routes/public'
 import chalk from 'chalk';
+import fileUpload from 'express-fileupload';
 
 const app: Application = express()
 
@@ -13,6 +13,8 @@ const PORT = 8888
 app.use(cors({
 	origin: "*"
 }))
+
+app.use(fileUpload());
 
 app.use(express.json())
 app.use(cookieParser())
