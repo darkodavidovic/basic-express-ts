@@ -1,4 +1,4 @@
-//@-ts-nocheck
+//@ts-nocheck
 
 import fs from "fs";
 import fse from "fs-extra";
