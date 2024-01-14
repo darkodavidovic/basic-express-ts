@@ -1,0 +1,26 @@
+{
+  "name": "prisma-generator",
+  "version": "1.0.0",
+  "description": "Generates Prisma JSON to nexus Model",
+  "scripts": {
+    "dev:model": "ts-node-dev --no-notify --respawn src/model-generator",
+    "dev:queryinput": "ts-node-dev --no-notify --respawn src/query-input-generator",
+    "dev:subscriptioninput": "ts-node-dev --no-notify --respawn src/subscription-input-generator",
+    "dev:query": "ts-node-dev --no-notify --respawn src/query-generator",
+    "dev:subscription": "ts-node-dev --no-notify --respawn src/subscription-generator",
+    "dev:middleware": "ts-node-dev --no-notify --respawn src/prisma-middleware-generator",
+    "start:model": "ts-node src/model-generator",
+    "dev:debug": "ts-node-dev --no-notify --respawn src/debug"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prisma/generator-helper": "^5.8.0",
+    "@prisma/internals": "^5.8.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/js-beautify": "^1.14.3",
+    "fs-extra": "^11.2.0",
+    "js-beautify": "^1.14.11",
+    "ts-node": "^10.9.2"
+  }
+}

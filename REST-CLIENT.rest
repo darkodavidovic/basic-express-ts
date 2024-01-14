@@ -1,0 +1,25 @@
+### second start with first
+@authorization = Bearer hbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.JRCI6MCwiVXNlciI6Imdwc2FkbWluIiwiRmlyc3RuYW1lIjpudWxsLCJMYXN0bmFtZSI6bnVsbCwiRW1haWwiOm51bGwsIlN5c3RlbSI6dHJ1ZSwiUm9sZSI6eyJJRCI6MSwiTmFtZSI6IkdQUyBBZG1pbiIsIlN5c3RlbSI6dHJ1ZSwiRGVzY3JpcHRpb24iOiJJVCJ9LCJQcml2aWxlZ2VzIjpbImFwcHN0b3JlX3N3aXRjaF9yZWxlYXNlIiwiYXBwc3RvcmVfZG93bmxvYWQiLCJhcHBzdG9yZV92aWV3Iiwic2V0dGluZ3NfcmVhZCIsInNldHRpbmdzX3dyaXRlIiwiYXNzZXRzX3JlYWQiLCJhc3NldHNfd3JpdGUiLCJhcHBzX3NpY29uX3ZpZXciLCJhcHBzX3NpY29uX25vZGUiLCJkZXZpY2VfdHJlZV9yZWFkIiwibWFpbnRlbmFuY2VfcGVyZm9ybSIsImV2ZW50c19jbGVhciIsImF1dGhlbnRpY2F0ZWQiLCJhc3NldHNfcmVhZF9oaWRkZW4iLCJhc3NldHNfd3JpdGVfaGlkZGVuIl0sImlhdCI6MTY4OTI0NDM0OX0.3ivkrM_VmuZ2bpaQ0raEWa_fr3roXjsKa9evtX1FIug
+
+GET  http://localhost:9000/devices HTTP/1.1
+Authorization: {{authorization}}
+###
+
+POST  http://localhost:9000/config HTTP/1.1
+content-type: application/json
+Authorization: {{authorization}}
+
+{
+	"url": "https://device.cloud.sicon.eco/",
+	"token": "{{authorization}}"
+}
+###
+
+### test routes
+GET  http://localhost:9000/set-cache HTTP/1.1
+Authorization: {{authorization}}
+###
+
+GET  http://localhost:9000/get-cache HTTP/1.1
+Authorization: {{authorization}}
+###

@@ -1,0 +1,13 @@
+{
+	"apps": [
+		{
+			"name": "bb-backend",
+			"cwd": "",
+			"script": "npm",
+			"args": "start",
+			"env": {
+				"DATABASE_URL": "mysql://admin:0624963644@localhost:3306/blackbox"
+			}
+		}
+	]
+}

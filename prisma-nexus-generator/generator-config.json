@@ -1,0 +1,33 @@
+{
+	"modelsFile": "../../src/graphql/resolvers/models/index.ts",
+	"queryWhereInputsFile": "../../src/graphql/resolvers/inputs/where-inputs.ts",
+	"queryOrderByInputsFile": "../../src/graphql/resolvers/inputs/orderby-inputs.ts",
+	"queryQroupByEnumsFile": "../../src/graphql/resolvers/enums/group-by.ts",
+	"queriesFile": "../../src/graphql/resolvers/queries/index.ts",
+	"subscriptionsFile": "../../src/graphql/resolvers/subscriptions/index.ts",
+	"mutationsPayloadsFile": "../../src/graphql/resolvers/payloads/index.ts",
+	"mutationsInputsFile": "../../src/graphql/resolvers/inputs/mutations-inputs.ts",
+	"mutationsCreateFile": "../../src/graphql/resolvers/mutations/create.ts",
+	"mutationsCreateManyFile": "../../src/graphql/resolvers/mutations/create-many.ts",
+	"mutationsUpdateFile": "../../src/graphql/resolvers/mutations/update.ts",
+	"mutationsUpdateManyFile": "../../src/graphql/resolvers/mutations/update-many.ts",
+	"mutationsDeleteFile": "../../src/graphql/resolvers/mutations/delete.ts",
+	"mutationsDeleteManyFile": "../../src/graphql/resolvers/mutations/delete-many.ts",
+	"models": {
+		"User": {
+			"excluded": [
+				"password"
+			],
+			"authorized": [
+				"password"
+			]
+		}
+	},
+	"customFields": {},
+	"excludeWhereConditions": {},
+	"excludeQuery": [],
+	"excludeSubscription": [],
+	"excludeGroupByInputs": [],
+	"excludeWhereInputs": [],
+	"jsonFieldsMap": {}
+}
